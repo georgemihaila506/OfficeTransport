@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.MainWindowControler">
+   <top>
+      <AnchorPane>
+         <children>
+            <Button layoutX="218.0" layoutY="4.0" mnemonicParsing="false" onAction="#searchHandle" prefWidth="150.0" text="Search">
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="486.0" layoutY="4.0" mnemonicParsing="false" onAction="#reserveHandle" prefHeight="46.0" prefWidth="150.0" text="Reserve">
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="150.0" onDragDetected="#reserveHandle" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Reserve.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="731.0" layoutY="4.0" mnemonicParsing="false" onAction="#singoutHandle" prefWidth="150.0" text="Log out">
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="150.0" onDragDetected="#singoutHandle" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/SignOut.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutY="4.0" mnemonicParsing="false" onAction="#setService" prefHeight="70.0" prefWidth="83.0" text="Office">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="hBox" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

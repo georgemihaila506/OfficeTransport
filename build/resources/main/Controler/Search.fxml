@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefWidth="542.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.SearchControler">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="283.0" spacing="15.0">
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Destination" />
+                        <TextField fx:id="destinationField" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox spacing="54.0">
+                     <children>
+                        <Label text="Date" />
+                        <TextField fx:id="dateField" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox spacing="53.0">
+                     <children>
+                        <Label text="Time" />
+                        <TextField fx:id="timeField" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+                     </children>
+                     <padding>
+                        <Insets left="110.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <TableView fx:id="tableView" prefHeight="400.0" prefWidth="319.0">
+              <columns>
+                <TableColumn fx:id="numberColumn" prefWidth="102.0" text="Number" />
+                <TableColumn fx:id="nameColumn" prefWidth="214.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
